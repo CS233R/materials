@@ -8,6 +8,18 @@
 - Able to set and get variables
 - Run a ruby program in the terminal or through IRB
 
+###Variables
+- Invalid variables
+- Best practices
+
+Which of these are good variable names?
+```
+HavingAGreatDAy
+THISISGOOD
+a_good_variable
+3_good_variables
+```
+
 ###Strings
 - Understand Strings and their associated methods
 - Understand white space and its characters

@@ -25,6 +25,7 @@ a_good_variable
 - Understand white space and its characters
 - String interpolation rules
 - Symbols
+- Heredoc
 
 ###Numbers
 - Know the different kinds of numbers

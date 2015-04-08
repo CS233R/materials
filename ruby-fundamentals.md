@@ -24,6 +24,7 @@ a_good_variable
 - Understand Strings and their associated methods
 - Understand white space and its characters
 - String interpolation rules
+- Symbols
 
 ###Numbers
 - Know the different kinds of numbers

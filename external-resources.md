@@ -3,6 +3,7 @@
 - http://tryruby.org
 - https://rubymonk.com/learning/books/1-ruby-primer
 - http://rubykoans.com/
+- http://en.wikibooks.org/wiki/Ruby_Programming
 
 Ruby Documentation
 - http://ruby-doc.org/

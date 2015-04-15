@@ -6,7 +6,7 @@ Create a list where you can add a Hero name, and their secret identity. You shou
 - List all heroes with secret identity (but requires you to enter a secret code of your choosing)
 - Add new heroes
 	- Hero name
-	- Real Name
+	- secret_identity
 	- Weakness
 
 - Remove fallen heroes

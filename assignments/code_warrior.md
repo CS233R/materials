@@ -95,12 +95,10 @@ def play_turn(warrior)
   end
  
   def is_taking_damage?(warrior)
-    #checks current health vs previous health to see if we are being attacked
     @under_attack = @health > warrior.health
   end
  
-  def actions(warrior) 
-  #potential actions the warrior can take to respond to situations
+  def actions(warrior)
     if @under_attack == true and warrior.feel.empty? == true
       warrior.walk!
     elsif @under_attack == true and warrior.feel.empty? == false
@@ -115,7 +113,6 @@ def play_turn(warrior)
   end
  
   def record_health(warrior)
-  #records current health, where @health is equivilent to previous health
     @health = warrior.health
   end
   ```

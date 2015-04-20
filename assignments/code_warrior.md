@@ -11,7 +11,7 @@ You are challenged to beat level 4
 #Due Date - April 14th 2015
 
 Frank Kergil ruby warrior code
-
+```
 class Player
   def play_turn(warrior)
     if warrior.feel.empty? then
@@ -26,6 +26,7 @@ end;
 @health=warrior.health; 
 end; 
 end
+```
 
 *Ted Hendricks*
 ``` Code
@@ -50,3 +51,71 @@ class Player
   end
 end
 ```
+
+*Ashley Rice*
+```ruby
+# Code through Level 4
+
+def play_turn(warrior)
+    warrior.walk!
+  end
+  
+  def play_turn(warrior)
+    warrior.feel
+    
+    if warrior.feel.empty? == true
+      warrior.walk!
+    else
+      warrior.attack!
+    end
+  end
+  
+  warrior.health  
+    warrior.feel
+ 
+    if warrior.feel.empty? == false
+        warrior.attack!
+    else
+      if warrior.health == 20
+        warrior.walk!
+      else
+          warrior.rest!
+      end
+    end
+    
+     def play_turn(warrior)
+ 
+    @max_health = 20
+    if @health == nil then @health = @max_health end
+ 
+    is_taking_damage?(warrior)
+    actions(warrior)
+    record_health(warrior)
+ 
+  end
+ 
+  def is_taking_damage?(warrior)
+    #checks current health vs previous health to see if we are being attacked
+    @under_attack = @health > warrior.health
+  end
+ 
+  def actions(warrior) 
+  #potential actions the warrior can take to respond to situations
+    if @under_attack == true and warrior.feel.empty? == true
+      warrior.walk!
+    elsif @under_attack == true and warrior.feel.empty? == false
+      warrior.attack!
+    elsif @under_attack == false and warrior.feel.empty? == true and warrior.health == @max_health
+      warrior.walk!
+    elsif @under_attack == false and warrior.feel.empty? == false and warrior.health == @max_health
+      warrior.attack!
+    elsif @under_attack == false and warrior.health < @max_health
+      warrior.rest!
+    end
+  end
+ 
+  def record_health(warrior)
+  #records current health, where @health is equivilent to previous health
+    @health = warrior.health
+  end
+  ```

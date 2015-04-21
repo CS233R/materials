@@ -4,6 +4,7 @@
 - https://rubymonk.com/learning/books/1-ruby-primer
 - http://rubykoans.com/
 - http://en.wikibooks.org/wiki/Ruby_Programming
+- http://iwanttolearnruby.com/
 
 Ruby Documentation
 - http://ruby-doc.org/

@@ -14,7 +14,7 @@ total = total + 1
 ```lang-ruby
 @items = [{name: "Item Name"}]
 for i in 0..(@items.size-1)
-	@items[i].name
+  @items[i][:name]
 end
 ```
 

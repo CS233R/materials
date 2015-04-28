@@ -102,6 +102,8 @@ $my_global = "some global information" #don't use these
 
 ###Strings
 
+Docs - [http://ruby-doc.org/core-2.2.0/String.html]()
+
 Strings are a core ruby class. 
 
 ```ruby
@@ -169,6 +171,7 @@ Whitespace characters consists of
 ```
 
 ###Symbols
+Docs - [http://ruby-doc.org/core-2.2.0/Symbol.html]()
 
 Are represented by a `:` and a non-quoted string `:example`
 
@@ -187,6 +190,12 @@ puts :sean.class # => Symbol
 ```
 
 ###Numbers
+Docs
+- [http://ruby-doc.org/core-2.2.0/Integer.html]()
+- [http://ruby-doc.org/core-2.2.0/Fixnum.html]()
+- [http://ruby-doc.org/core-2.1.1/Bignum.html]()
+- [http://ruby-doc.org/core-2.2.0/Range.html]()
+
 ####Different Types
 ```ruby
 #Fixnum (Whole numbers)
@@ -204,26 +213,27 @@ puts :sean.class # => Symbol
 ####Operators
 ````ruby
 #Addition
-5 + 5
+5 + 5 # => 10
 
 #Subtraction
-10 - 3
+10 - 3 # => 7
 
 #Multiplication
-4 * 8
+4 * 8 # => 32
 
 #Division
-3 / 4
+3 / 4 # => 0
+3.0 / 4.0 # => 0.75
 
 #Modulus
-5 % 2
+5 % 2 #  => 1
 
 #Exponents
-2 ** 2
+2**2 # => 4
 
 #Range Operators
-1..10 #Range of 1 - 10 (Inclusive)
-1...10 #Range of 1 - 10 (Not including 10)
+1..10 # Range of 1 - 10 (Inclusive)
+1...10 # Range of 1 - 10 (Not including 10)
 ````
 ####Assignment Operators
 ```ruby
@@ -266,6 +276,8 @@ puts :sean.class # => Symbol
 
 
 ###Methods
+Docs - [http://ruby-doc.org/core-2.2.0/Method.html]()
+
 Methods are defined using the keyword `def`
 
 ####A method without arguments
@@ -417,6 +429,15 @@ when another_condition
   # do something
 else
   # do something if no when conditions
+```
+
+Also the single line formatting version of a case statement
+
+```ruby
+case variable
+when condition then # do something
+when another_condition then # do something
+else # do something if no when conditions
 ```
 
 ###Logical Operators
@@ -762,7 +783,6 @@ my_array.map { |char| char + "!" }
 
 
 #### Inject / Reduce
-
 
 ```ruby
 # Sum some numbers

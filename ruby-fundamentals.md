@@ -126,8 +126,7 @@ Quotes
 
 ```ruby 
 interpolation = "cannot be interpolated"
-%q{A string #{interpolation}}
-=> "A string \#{interpolation}"
+%q{A string #{interpolation}} # => "A string \#{interpolation}"
 ```
   
 `%Q` creates a string without interpolation
@@ -371,7 +370,7 @@ size **= 2 # => 100
 
 ```ruby
 10 < 5 # => false
-5 > 10 # => true
+5 > 10 # => false
 5 >= 5 # => true
 5 <= 6 # => false
 ```

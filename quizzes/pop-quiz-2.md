@@ -2,7 +2,7 @@
 
 2. How does `.new` relate to `initialize` method do?
 
-3. Does this inher	stance make sense?
+3. Does this inherstance make sense?
 
   ```lang-ruby
   class Frog

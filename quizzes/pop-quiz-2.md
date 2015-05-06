@@ -1,6 +1,10 @@
-1. How do you define a class?
+﻿1. How do you define a class?
+	class Food
+
+	end
 
 2. How does `.new` relate to `initialize` method do?
+	Every time you use new it calls initialize method.
 
 3. Does this inheritance make sense?
 
@@ -11,16 +15,19 @@
   
   class Animal < Frog
     #code that makes animals live
-  end
+  class
   ```
+	not it does not frog should be the child of animal not the other way around.
 
-4. Define a instance variable in code
+4. Define a instance variables in code
+	@name = name
 
 5. Define a class variable in code
+	@@dog = dog
 
 6. Define a global variable in code
 
-7. T/F the `eat` method is private
+7. T/<b>F</b> the `eat` method is private
 
   ```ruby
   class Worm
@@ -39,7 +46,11 @@
   ```
 
 8.  Define a attr_reader in code, and what does it do?
+	attr_reader name 
+	It makes it so you can read a variable but can't change it 	outside fo the 	class.
 9.  Define a attr_accessor in code, and what does it do?
+	attr_accessor dog
+	It makes it so you can read and write to the variable outside of the class
 
 10.  How would you instantiate this class?
 
@@ -49,4 +60,7 @@
       puts "#{name} is a #{breed}"
     end
   end
-  ```
+  
+
+dog = Dog.new
+```

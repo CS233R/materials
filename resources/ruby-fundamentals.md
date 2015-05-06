@@ -659,12 +659,12 @@ my_hash.select {|k,v| v < 200}  #=> {"a" => 100}
 #### While Statement loop
 
 ```ruby
-$i = 0
-$num = 3
+i = 0
+num = 3
 
-while $i < $num  do
-   puts("value inside loop is #$i" )
-   $i +=1
+while i < num  do
+ puts("value inside loop is #i" )
+ i +=1
 end
 # value inside loop is 0
 # value inside loop is 1
@@ -675,12 +675,12 @@ end
 #### While Modifier loop
 
 ```ruby
-$i = 0
-$num = 3
+i = 0
+num = 3
 begin
-   puts("value inside loop is #$i" )
-   $i +=1
-end while $i < $num
+   puts("value inside loop is #{i}" )
+   i +=1
+end while i < num
 # value inside loop is 0
 # value inside loop is 1
 # value inside loop is 2
@@ -690,12 +690,12 @@ end while $i < $num
 #### Until loop
 
 ```ruby
-$i = 0
-$num = 5
+i = 0
+num = 5
 
-until $i > $num  do
-   puts("value inside loop is #$i" )
-   $i +=1
+until i > num  do
+ puts("value inside loop is #{i}" )
+ i +=1
 end
 # value inside loop is 0
 # value inside loop is 1
@@ -709,7 +709,7 @@ end
 #### For loop
 ```ruby
 for i in 0..3
-   puts "Value of local variable is #{i}"
+ puts "Value of local variable is #{i}"
 end
 # Value of local variable is 0
 # Value of local variable is 1

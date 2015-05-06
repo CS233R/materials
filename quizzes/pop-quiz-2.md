@@ -6,20 +6,14 @@
 
 2. How does `.new` relate to `initialize` method do?
 
-	>When .new is called on a class it creates a new instance of the class. When the instance is created it looks within the class for an initialize method. This method can be used to create initial values for the class.
+3. Does this inheritance make sense?
 
 3. Does this inheritance make sense?
   
-	```ruby
-	class Frog
-		#code that frogs go hop hop hop
-	end
-	class Animal < Frog
-		#code that makes animals live
-	end
-	```
-	
-	> No this inheritance does not make sense because a frog is a type of animal but an animal is not a type of frog
+  class Animal < Frog
+    #code that makes animals live
+  end
+  ```
 
 4. Define a instance variables in code
 

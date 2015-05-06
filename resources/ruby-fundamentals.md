@@ -663,7 +663,7 @@ i = 0
 num = 3
 
 while i < num  do
- puts("value inside loop is #i" )
+ puts("value inside loop is #{i}" )
  i +=1
 end
 # value inside loop is 0

@@ -14,7 +14,7 @@
   end
   ```
 
-4. Define a instance variables in code
+4. Define a instance variable in code
 
 5. Define a class variable in code
 

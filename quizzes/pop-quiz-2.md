@@ -11,7 +11,7 @@
   
   class Animal < Frog
     #code that makes animals live
-  class
+  end
   ```
 
 4. Define a instance variables in code

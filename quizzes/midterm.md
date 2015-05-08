@@ -1,62 +1,87 @@
-1. Circle all 5 of the problems with the code below.
+#Mid-Term : Ruby
+##Gary McGinnis
 
-	```ruby
-	class Monkey < Monkey
-	  def init(my_vars)
-	    my_vars = my_vars
-	  end
+1: Circle all 5 of the problems with the code below.
 
-	  private
-	  def eat_banana
-	    "Om Om Om, oooh aaaah aaaah"
+```lang-ruby
+	**class Monkey < Monkey : Monkey Can't be child of Monkey **
+  		def init(my_vars)
+    			**my_vars = my_var : "Can't be the same name"**
+  		end
+	  	private
+	  		def eat_banana
+	   	**"Om Om Om, oooh aaaah aaaah" : "No puts and" **
 	  end
 	end
 
 	monkey = Monkey.new
-	monkey.eat_banana
-	```
+	**monkey.eat_banana : "Can't access private method in class"**
+```
 
-1. What is returned from the statement below?
 
-	```ruby
+
+2: What is returned from the statement below?
+
+```lang-ruby
 	thoughts = Array.new(4, "Oh bugger, another test")
 
 	thoughts[2]
-	```
+```
+	another
 
-1. What is the result of this `fetch`?
+3: What is the result of this `fetch`?
 
-	```ruby
+```lang-ruby
 	my_hash = { my_key: 'value', another_key: 'another value' }
 	my_hash.fetch(:not_a_key_yet, 'default value')  # => ??????
-	```
+```
+```
+	defualt Value
+```
+4: Give an example of a good variable name, and a bad variable name.
 
-1. Give an example of a good variable name, and a bad variable name.
-
-
-
-
-
-1. What is the difference between `1..10` and `1...10`?
-
+**variable_name** good
+**vName** bad 
 
 
 
-1. What is the result of running this method
 
-	```ruby
+
+5: What is the difference between `1..10` and `1...10`?
+
+```
+1..10  is through and 1...10 is up to wright before.
+```
+
+****
+
+
+6: What is the result of running this method
+
+```lang-ruby
 	def ant_eater(ants)
 	  ants -= 1
 	end
 
 	ant_eater
-	```
+```
 
-1. Name one thing you would fix with the arguments of this method. (see below)
-1. Now use the method to eat some humans! (see below)
-1. write down how many Humans did you eat? (see below)
+	**You would get an error that you did not send a veariable over to the method**
 
-	```ruby
+7: Name one thing you would fix with the arguments of this method. (see below)
+```
+move ant_size to the end of the meathod beacuse is it optional
+	
+```
+
+8: Now use the method to eat some humans! (see below)
+```lang-ruby
+	eat = eat_humans(12, 5)
+```
+
+9: write down how many Humans did you eat? (see below)
+
+```lang-ruby
 	def eat_humans(ant_size = 5, giant_ants)
 	  if ant_size > 11
 	    giant_ants**3 # Run for the hills
@@ -64,52 +89,90 @@
 	    giant_ants % 2 # You small little guys have trouble taking anyone down.
 	  end
 	end
-	```
+```
+
+```
+125
+```
+10: Demonstrate using multiple logical operators (||, &&)
+
+```lang-ruby
+	variable = true
+	if variable == || variable == false && variable == True
+		puts "always runs true becuase if the first part is true it does not go to the second part."
+	end 
+```
 
 
-1. Demonstrate using multiple logical operators (||, &&)
+11: What is the result of calling sort?
 
-
-1. What is the result of calling sort?
-
-	```ruby
+```lang-ruby
 	["one fish", "two fish", "red fish", "blue fish"].sort
-	```
+```
+
+```lang-ruby
+**["blue fish" , "one fish" , "two fish"]**
+```
 
 
-1. Write a hash that has the following keys :name, :super_power, :weakness
+12: Write a hash that has the following keys :name, :super_power, :weakness
+
+```lang-ruby
+hash = {:keys , :super_power, :weakness}
+```
+
+13: **T**/F You can set a default value for a Hash
 
 
-1. T/F You can set a default value for a Hash
 
+14: What is the resulting hash?
 
-
-1. What is the resulting hash?
-
-	```ruby
+```lang-ruby
 	my_hash = { "a" => 100, "b" => 200, "c" => 300 }
 	my_hash.select {|key,value| key < "c"}
-	```
+```
 
-1. Write code that iterates through the numbers array and out`puts` the `KEY` for `each` of the values in the array.
+```lang-ruby
+	it selects "a" and "b"
+```
 
-	```ruby
+15: Write code that iterates through the numbers array and out`puts` the `KEY` for `each` of the values in the array.
+
+```lang-ruby
 	numbers = ['one', 'two', 'three']
-	```
+```
 
-1. Write code that `maps` the fruits array to a new array where all the values are `reverse`d. Eg. "apples" = "selppa"
+```lang-ruby
+	puts numbers.map
+```
 
-	```ruby
+16: Write code that `maps` the fruits array to a new array where all the values are `reverse`d. Eg. "apples" = "selppa"
+
+```lang-ruby
 	fruits = [ "apples", "bananas", "carrots", "beets" ]
-	```
+```
 
-1. Which attr_xxxxx would you use in this example? (see below)
+```lang-ruby
+	stiurf = []
+	fruits.each do |fruit|
+		stiurf = fruit.reverse
+	end
+```
 
-1. What would change in the tame method? (see below)
+17. Which attr_xxxxx would you use in this example? (see below)
+```lang-ruby
+	attr_read
+```
 
-1. Now go tame some lions, and don't get eaten! Use the class to invoke the `tame` method on an object instance. (see below)
+18: What would change in the tame method? (see below)
+```
+	check to see if he tamed the lion or not insted of just 
+	checking wheather or not the variable is true.
+```
 
-	```ruby
+19: Now go tame some lions, and don't get eaten! Use the class to invoke the `tame` method on an object instance. (see below)
+
+```lang-ruby
 	class LionTamer
 	  # attr_xxxx :lions
 
@@ -126,33 +189,64 @@
 	    end
 	  end
 	end
-	```
+```
 
+```lang-ruby
+	lion = LionTamer.new("Ruben")
+	
+	lion.tame
 
-1. I totally messed up my spelling, fix it using `gsub`
+```
 
-	```ruby
+20: I totally messed up my spelling, fix it using `gsub`
+
+```lang-ruby
 	"Always rzmzmbzr you arz absolutzly uniquz, likz zvzryonz zlsz"
-	```
+```
 
-1. What is the resulting Hash. Please fully format the hash with proper `{}` and use `symbols`
+21: What is the resulting Hash. Please fully format the hash with proper `{}` and use `symbols`
 
-	  ```ruby
+```lang-ruby
 	  my_hash = { my_key: 'value', another_key: 'another value' }
 	  other_hash = { new_key: "new value", new_another: "I will overwrite or will I?"}
 	  my_hash.merge(other_hash)
-	```
+```
+
+```lang-ruby
+	{my_key: 'value' , another_key: 'another value' ,  
+	new_key: 'new value' , new_another: 'I will overwrite or will I' }
+```
 
 
-1. What is the first thing you should do with `Legacy Code?`. And no, you can't throw it out.
+22: What is the first thing you should do with `Legacy Code?`. And no, you can't throw it out.
 
-1. Who is the creator of Ruby?
+```
+	Clean up the code
+```
 
-1. Write a class that uses a Global, Instance, Class, and local variable. Don't worry about what it does, just properly use the variables.
+23: Who is the creator of Ruby?
 
-1. Write a Monkey class that `eat`s bananas, and `drink`s water
+```
 
-	```ruby
+```
+
+24: Write a class that uses a Global, Instance, Class, and local variable. Don't worry about what it does, just properly use the variables.
+
+```lang-ruby
+	class
+		$global
+		@@class = somthing
+		@instance = somthing
+		def food = somthing
+			local = somthing
+			puts local
+		end
+	end
+```
+
+25: Write a Monkey class that `eat`s bananas, and `drink`s water
+
+```lang-ruby
 	class Animal
 	  def eat
 	    "Food is yummy"
@@ -162,13 +256,25 @@
 	    "water"
 	  end
 	end
-	```
+```
 
-1. What is the difference between using `extend` and `include`?
+```lang-ruby
+	class Monkey < Animal
+		def eat 
+			"Bannans are yummy."
+		end
+	end
+```
 
-1. Convert this into a case statement
+26: What is the difference between using `extend` and `include`?
 
-	```ruby
+```
+include is required where extend is optionsal.
+```
+
+27: Convert this into a case statement
+
+```ruby
 	if fruit == 'apple'
 	  #eat
 	elsif fruit == 'pear'
@@ -177,12 +283,33 @@
 	  #no thanks
 	else
 	  #eat
-	```
+```
+
+```lang-ruby
+	case fruit
+		when 'apple'
+			#eat
+		when 'pear'
+			#eat
+		when durian
+			#no thanks
+		else
+			#eat
+	end
+```
 	
-1.  T  /  F Arrays can only hold `String` and `Hash` values?
+28:  **T**  /  F Arrays can only hold `String` and `Hash` values?
 
-1.  What is the scope resolution operator? 
+29:  What is the scope resolution operator? 
 
-1. T / F Ruby expects that you might pass a hash as the last argument to a method.
+```
+	
+```
 
-1. Extra Credit: What is a Gem?
+30: T / **F** Ruby expects that you might pass a hash as the last argument to a method.
+
+31: Extra Credit: What is a Gem?
+
+```
+A gem is a collection of code that you can install and use in your program.
+```

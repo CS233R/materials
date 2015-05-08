@@ -7,6 +7,7 @@
 	  end
 
 	  private
+	  
 	  def eat_banana
 	    "Om Om Om, oooh aaaah aaaah"
 	  end
